@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Bosch";
+  src: url("../fonts/Bosch.otf") format("opentype"), url("../fonts/Bosch.woff2") format("woff2"), url("../fonts/Bosch.woff") format("woff"), url("../fonts/Bosch.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Bosch";
+  background-color: rgb(59, 57, 57);
+  height: 100%;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #000;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu__btn {
+  color: #bbb;
+  font-size: 36px;
+  position: relative;
+  z-index: 100;
+  cursor: pointer;
+}
+.menu__link {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 36px;
+  transition: all 0.3s;
+}
+.menu__right, .menu__left {
+  display: none;
+  position: fixed;
+  width: 50vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgb(51, 25, 110);
+  padding: 80px 40px 0 40px;
+}
+.menu__right.open, .menu__left.open {
+  display: block;
+}
+.menu__right {
+  left: auto;
+  right: 0;
+  background-color: rgb(17, 15, 15);
+}
+.menu__right .menu__item {
+  text-align: right;
+}
+.menu__right .menu__link:hover {
+  text-shadow: rgb(51, 25, 110) 1px 0 10px;
+}
+.menu__left .menu__link:hover {
+  text-shadow: rgb(17, 15, 15) 1px 0 10px;
+}
+.menu__left .menu__item {
+  text-align: left;
+}/*# sourceMappingURL=style.css.map */
